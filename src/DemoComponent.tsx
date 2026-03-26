@@ -7,9 +7,9 @@ import { Tooltip } from "@openai/apps-sdk-ui/components/Tooltip";
  */
 export function DemoComponent() {
   return (
-      <Tooltip content="This is additional context that appears when the trigger is hovered or focused" compact={true}>
+      <Tooltip content="Label" compact={true}>
         <Tooltip.TriggerDecorator>
-          Label
+          Simple text with tooltip
         </Tooltip.TriggerDecorator>
       </Tooltip>
   );
