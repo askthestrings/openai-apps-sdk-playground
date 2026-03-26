@@ -9,7 +9,7 @@ export function DemoComponent() {
   return (
       <Tooltip content="This is additional context that appears when the trigger is hovered or focused" compact={true}>
         <Tooltip.TriggerDecorator>
-          Simple text with tooltip
+          Label
         </Tooltip.TriggerDecorator>
       </Tooltip>
   );
