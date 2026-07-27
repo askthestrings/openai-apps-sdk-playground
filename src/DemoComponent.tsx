@@ -10,12 +10,15 @@ export function DemoComponent() {
   return (
     <div style={{ width: "356px" }}>
       <Alert
+        indicator={false}
+        variant="soft"
+        color="warning"
         title="Our terms of service has been updated"
         description="We've updated our terms to clarify how we handle data, billing, and user permissions. Please review and accept the latest terms to avoid impacting your service."
         actions={(
           <div style={{ display: "flex", flexDirection: "row", gap: "8px", width: "100%" }}>
-            <Button style={{flex: "1"}} size="lg" color="primary" pill variant="soft">Set reminder</Button>
-            <Button style={{flex: "1"}} size="lg" color="primary" pill variant="solid">Review terms</Button>
+            <Button style={{ flex: "1" }} size="lg" color="warning" pill variant="solid">Set reminder</Button>
+            <Button style={{ flex: "1" }} size="lg" color="warning" pill variant="outline">Review terms</Button>
           </div>
         )}
         actionsPlacement="bottom"
